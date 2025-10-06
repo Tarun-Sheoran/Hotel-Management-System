@@ -1,0 +1,25 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    name: amenity-microservice
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/hotel      # Replace with your actual DB name
+    username: root                              # Replace with your DB username
+    password: 25022003                          # Replace with your DB password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+logging:
+  level:
+    root: INFO
+    com.hotelmanagement: DEBUG
